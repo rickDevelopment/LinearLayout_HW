@@ -22,7 +22,10 @@ tools:context=".MainActivity">
 
 
         <!-- Bars containter -->
-
+    <LinearLayout
+        android:layout_height="315dp"
+        android:layout_width="300dp"
+        >
         <TextView
             android:layout_width="0dp"
             android:layout_height="310dp"
@@ -77,7 +80,8 @@ tools:context=".MainActivity">
             android:layout_height="130dp"
             android:background="#8C6429"
             android:layout_weight="1"
-
+            android:layout_marginLeft="2dp"
+            android:layout_gravity="bottom"
             android:text="04"/>
 
 
@@ -87,7 +91,7 @@ tools:context=".MainActivity">
             android:background="#55C3DC"
             android:layout_weight="1"
             android:layout_marginLeft="2dp"
-            android:gravity="top|center"
+            android:layout_gravity="bottom"
             android:text="03"/>
 
 
@@ -99,15 +103,23 @@ tools:context=".MainActivity">
             android:layout_gravity="bottom"
             android:layout_marginLeft="4dp"
             android:text="02"/>
+    </LinearLayout>
+
+    <!-- Launch Button -->
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_gravity="top">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="4dp"
             android:text="LAUNCH"
-            android:id="@+id/launch_button"
+            android:id="@+id/launch_button" />
 
-            android:layout_gravity="bottom" />
-
+    </LinearLayout>
 
         <ImageView
             android:layout_width="150dp"
